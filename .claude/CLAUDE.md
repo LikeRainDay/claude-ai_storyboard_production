@@ -61,8 +61,7 @@ All commands are implemented as **Skills** in `.claude/skills/`:
 ### Configuration Commands
 
 - `/status` — Show progress for all episodes
-- `/config [ep_number]` — Configure visual style (aspect ratio, style keywords, target model)
-- `/language [lang_code]` — Set default language (zh-CN, en-US, ja-JP, ko-KR)
+- `/config [ep_number]` — Configure visual style AND language (aspect ratio, style keywords, target model, language)
 
 ## Project Structure
 
@@ -98,8 +97,7 @@ project/
         ├── sequence/                # /sequence command
         ├── motion/                  # /motion command
         ├── status/                  # /status command
-        ├── config/                  # /config command
-        ├── language/                # /language command
+        ├── config/                  # /config command (includes language)
         │
         ├── film-storyboard-skill/   # Storyboard methodology
         │   ├── storyboard-methodology-playbook.md
