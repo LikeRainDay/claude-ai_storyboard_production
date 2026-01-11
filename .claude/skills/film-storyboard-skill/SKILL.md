@@ -1,125 +1,257 @@
 ---
 name: Film Storyboard Skill
-description: Professional storyboarding methodology and AI image prompt engineering for visual storytelling
+description: 影视分镜方法论、提示词写法指南和模板
 version: 1.0.0
 ---
 
-# Film Storyboard Skill
+# Film Storyboard Skill (影视分镜技能)
 
-This skill package equips the Storyboard Artist with professional film and animation storyboarding methodology, optimized for AI image generation workflows.
+此技能为 Storyboard Artist 提供专业的影视分镜方法论和提示词生成能力。
 
-## Skill Components
+## 技能组件
 
-### 1. **storyboard-methodology-playbook.md**
+### 1. **storyboard-methodology-playbook.md** 📖
 
-Comprehensive guide to storyboard principles:
+分镜方法论完整指南（参考用）：
 
-- Clear, concise, consistent, progressive refinement methodology
-- Shot composition and cinematography rules
-- Character and scene continuity management
-- Narrative beat selection strategies
-- Visual storytelling best practices
+- 四大支柱：清晰、简洁、一致、渐进
+- Beat breakdown 方法论
+- 镜头构图和摄影
+- 连贯性管理
+- AI 图像生成特殊技巧
+- **高级电影技巧**：蒙太奇、转场、时空处理
 
-### 2. **gemini-image-prompt-guide.md**
+### 2. **gemini-image-prompt-guide.md** 📖
 
-Specialized prompt writing guide for AI image models (Gemini Imagen 3 and similar):
+提示词写法指南（参考用）：
 
-- Narrative descriptive style vs keyword stuffing
-- Optimal prompt structure and length
-- Character consistency techniques
-- Lighting and mood specification
-- Common pitfalls and how to avoid them
+- 叙事描述式风格（非关键词堆砌）
+- 提示词结构模板
+- 角色一致性技巧
+- 光影描述方法
+- **Nano Banner 格式优化**（新增）
+- Gemini/Midjourney 优化建议
 
 ### 3. **Templates**
 
-Structured output formats:
+- `beat-breakdown-template.md` — Beat breakdown 输出格式
+- `beat-board-template.md` — Beat board (9 宫格)输出格式
+- `sequence-board-template.md` — Sequence board (4 格)输出格式
 
-- `beat-breakdown-template.md` — Format for identifying story anchor points
-- `beat-board-template.md` — Format for 9-panel visual baseline prompts
-- `sequence-board-template.md` — Format for 4-panel continuous sequence prompts
+## 平台支持
 
-## When to Use This Skill
+### Nano Banner（默认推荐）
 
-The Storyboard Artist should reference this skill when:
+**格式**: Episode Visual Script 模式
 
-- Analyzing scripts for beat breakdown
-- Selecting the 9 key narrative beats
-- Writing image generation prompts (beat board or sequence board)
-- Ensuring character and scene consistency
-- Following cinematography and composition rules
-- Resolving Director feedback about methodology violations
+- 9 个 beats，每个 beat 包含 Visual Description + Lighting & Mood
+- 优化用于 nano banner 3x3 网格生成
+- 单次生成完整 9 宫格，保证一致性
 
-## Skill Activation
+### Midjourney v6
 
-This skill is **always active** for the Storyboard Artist agent. All outputs must conform to the methodology and templates defined here.
+**格式**: 独立 prompts + 参数
 
-## Key Principles
+- 每个 beat 独立 prompt
+- 包含`--ar 16:9 --style cinematic --v 6`参数
+- 网格位置标注
 
-### The Four Pillars of Storyboard Quality
+### Gemini Imagen 3 / DALL-E 3
 
-1. **Clear**: Every prompt should unambiguously describe what will be generated
+**格式**: 标准叙事描述式 prompts
 
-   - Specific shot types, camera angles, and framing
-   - Concrete character descriptions (not "a person")
-   - Defined locations (not "somewhere")
+- 无特殊参数要求
+- 依赖详细的叙事描述
 
-2. **Concise**: Detailed but not bloated
+## 视觉风格候选
 
-   - Static prompts: 80-150 words
-   - Focus on visual essentials
-   - Avoid narrative exposition
+### 推荐风格组合
 
-3. **Consistent**: Maintain visual continuity
+**写实风格**:
 
-   - Characters look identical across prompts
-   - Settings maintain architectural coherence
-   - Lighting style remains stable
-   - Visual style tokens (e.g., "anime", "cinematic") applied uniformly
+```
+photorealistic, professional photography, cinematic lighting, high detail
+```
 
-4. **Progressive**: Build on previous work
-   - Beat breakdown establishes narrative structure
-   - Beat board (9-panel) establishes visual language
-   - Sequence board (4-panel) inherits and expands
-   - Each stage refines, never contradicts
+**动漫风格**:
 
-### The Inheritance Rule
+```
+anime style, soft cel shading, vibrant colors, expressive characters
+```
 
-**Critical**: When creating 4-panel sequences, the Storyboard Artist must **inherit** character appearance, setting, and lighting from the corresponding 9-panel beat prompt.
+**概念艺术风格**:
 
-**Example**:
+```
+digital concept art, painterly style, dramatic atmosphere, detailed environment
+```
 
-- **Beat 3 (9-panel)**: "A young woman with long silver hair wearing a crimson coat..."
-- **Sequence from Beat 3, Panel 1 (4-panel)**: "A young woman with long silver hair wearing a crimson coat turns toward..."
+**电影黑色风格**:
 
-The inherited elements anchor consistency and reduce generation errors.
+```
+film noir aesthetic, high contrast black and white, dramatic shadows, moody atmosphere
+```
 
-## Template Compliance
+**赛博朋克风格**:
 
-All outputs must strictly follow the template formats. The Director will reject work that deviates from template structure.
+```
+cyberpunk aesthetic, neon lighting, rain-slicked streets, vibrant pink and cyan colors
+```
 
-## Quality Assurance
+**奇幻插画风格**:
 
-The Director agent uses this same methodology to review the Storyboard Artist's work. Both agents share the same quality standards to ensure alignment.
+```
+fantasy illustration style, painterly, rich colors, epic composition
+```
 
-## Methodology Source
+**水彩风格**:
 
-The storyboard principles in this skill are based on:
+```
+watercolor painting style, soft edges, flowing colors, artistic paper texture
+```
 
-- Professional film and animation pre-production practices
-- AI image generation model optimization research
-- Iterative testing with Gemini Imagen 3, Midjourney, and similar models
-- Continuity management techniques from VFX and animation pipelines
+### 光影方案候选
 
-## Customization Note
+**黄金时刻**:
 
-This skill package can be replaced or extended to support:
+```
+warm golden hour sunlight, long soft shadows, orange and amber tones
+```
 
-- Different visual styles (e.g., comic book, architectural visualization)
-- Different AI image models (e.g., DALL-E, Midjourney with their specific syntax)
-- Different narrative structures (e.g., documentary, commercial, game cinematics)
+**蓝色时刻**:
 
-To customize, modify the methodology playbook and prompt guide while maintaining the template structures.
+```
+cool blue twilight, soft gradient from purple to dark blue, minimal shadows
+```
+
+**电影光影**:
+
+```
+cinematic lighting, dramatic contrast, three-point lighting setup
+```
+
+**自然柔光**:
+
+```
+soft diffused natural light, even illumination, gentle shadows
+```
+
+**霓虹夜景**:
+
+```
+vibrant neon lighting in pink and cyan, colored reflections, high contrast
+```
+
+**戏剧性侧光**:
+
+```
+dramatic side lighting, split lighting effect, deep shadows
+```
+
+### 宽高比选项
+
+- `16:9` - 宽屏电影（推荐）
+- `1:1` - 方形（Instagram）
+- `9:16` - 竖屏（TikTok, Reels）
+- `4:3` - 传统电视
+- `21:9` - 超宽电影
+
+## 用途
+
+Storyboard Artist 使用此技能来：
+
+- 从剧本中识别和提取 9 个关键叙事节拍
+- 生成 9 宫格 beat board 提示词（建立视觉基准）
+- 生成 4 格 sequence board 提示词（展开连续镜头）
+- 保持角色外观、场景、光色的一致性
+- 遵循专业分镜方法论标准
+- **针对不同平台优化输出格式**
+
+## 何时使用此技能
+
+Storyboard Artist 应在以下情况参考此技能：
+
+- 生成 beat breakdown 时参考 beat selection criteria
+- 生成 beat board 时参考 prompt writing guide 和平台格式要求
+- 生成 sequence board 时参考 continuity rules
+- 解决 Director 关于一致性的反馈时参考 methodology
+- 不确定提示词格式时参考 templates
+- **选择视觉风格时参考风格候选列表**
+- **针对 nano banner 优化时参考特定格式指导**
+
+## 核心原则
+
+### 四大支柱（4C Framework）
+
+1. **Clear 清晰**: 每个提示词明确无歧义
+2. **Concise 简洁**: 详细但不臃肿（Visual Description: 80-120 词，Lighting & Mood: 30-50 词）
+3. **Consistent 一致**: 角色/场景/光色在所有 prompts 中保持一致
+4. **Progressive 渐进**: 9 宫格 →4 宫格逐层细化，不矛盾
+
+### 分层渐进流程
+
+```
+Beat Breakdown (9个锚点)
+  ↓ 继承叙事结构
+Beat Board (9宫格) — 建立视觉基准（角色、场景、光色）
+  ↓ 继承视觉元素
+Sequence Board (4格) — 展开动作序列，保持一致性
+```
+
+### 关键约束
+
+**输出规则**:
+
+- ❌ **禁止 frontmatter 元数据**（如`---\nepisode: ep01\n---`）
+- ❌ **禁止模板说明**（如"此模板..."、"注意事项"）
+- ❌ **禁止 Next/下一步指令**
+- ✅ **仅输出实际内容**（prompts 本身）
+
+**Nano Banner 特殊要求**:
+
+- 使用 Episode Visual Script 格式
+- Visual Description: 80-120 词（详细视觉）
+- Lighting & Mood: 30-50 词（光影氛围）
+- 9 个 beats 完整结构
+
+**角色一致性**:
+
+- 建立规范描述（canonical description）
+- 所有 prompts 逐字重复关键识别符
+- 外观、服装、特征标记保持 100%一致
+
+## Nano Banner 格式指导
+
+Nano banner 需要特殊的 Episode Visual Script 格式，**不同于**标准 Gemini 提示词：
+
+### 标准格式
+
+```markdown
+EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
+
+Beat 1: [Beat 标题]
+Visual Description: [镜头类型]. [角色规范描述] [动作/姿势] [场景细节] [关键视觉元素]. [80-120 词]
+Lighting & Mood: [光影方向、质量、色温] [情绪氛围]. [30-50 词]
+
+Beat 2: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
+
+[继续 Beat 3-9]
+```
+
+### 与 Gemini 格式的区别
+
+| 特性 | Nano Banner                               | Gemini/Midjourney |
+| ---- | ----------------------------------------- | ----------------- |
+| 结构 | Visual Description + Lighting & Mood 分离 | 单一 prompt 块    |
+| 长度 | 80-120 词 + 30-50 词                      | 80-150 词总计     |
+| 格式 | Episode Visual Script                     | 叙事描述式        |
+| 输出 | 一次生成完整 3x3 网格                     | 逐个生成          |
+
+## 技能激活
+
+此技能对 Storyboard Artist agent **始终可用**。所有分镜输出必须符合 methodology 和 templates。
 
 ---
 
-**Usage**: The Storyboard Artist agent automatically references this skill. No manual invocation required.
+**用法**: Storyboard Artist agent 自动引用此技能。Methodology 和 guide 标记为 📖 仅在需要时参考。

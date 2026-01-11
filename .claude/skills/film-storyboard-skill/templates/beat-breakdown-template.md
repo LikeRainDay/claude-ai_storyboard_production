@@ -1,68 +1,46 @@
-# Beat Breakdown Template
+# Beat Breakdown 输出格式（参考）
+
+**此模板仅供参考 - 最终输出不应包含这些说明**
+
+**❌ 严禁输出**：
+
+- Frontmatter 元数据
+- 模板说明
+- "下一步"指令
+- 任何非内容的说明
+
+**✅ 仅输出**：实际的 beat breakdown 内容
 
 ---
 
-episode: ep{XX}
-language: [zh-CN/en-US/ja-JP/ko-KR]
+## 最终输出应包含：
 
----
-
+```markdown
 # Beat Breakdown - Episode {XX}
 
-## Beat 1: [Beat Name]
+**场景**: [场景引用]
+**描述**: [发生了什么]
+**目的**: [叙事功能]
 
-**Scene**: [Scene reference]
-**Description**: [What happens]
-**Purpose**: [Narrative function]
+## Beat 2: [标题]
 
-## Beat 2: [Beat Name]
+**场景**: ...
+**描述**: ...
+**目的**: ...
 
-**Scene**:
-**Description**:
-**Purpose**:
+...
 
-## Beat 3: [Beat Name]
+## Beat 9: [标题]
 
-**Scene**:
-**Description**:
-**Purpose**:
+**场景**: ...
+**描述**: ...
+**目的**: ...
+```
 
-## Beat 4: [Beat Name]
+## Agent 注意事项：
 
-**Scene**:
-**Description**:
-**Purpose**:
-
-## Beat 5: [Beat Name]
-
-**Scene**:
-**Description**:
-**Purpose**:
-
-## Beat 6: [Beat Name]
-
-**Scene**:
-**Description**:
-**Purpose**:
-
-## Beat 7: [Beat Name]
-
-**Scene**:
-**Description**:
-**Purpose**:
-
-## Beat 8: [Beat Name]
-
-**Scene**:
-**Description**:
-**Purpose**:
-
-## Beat 9: [Beat Name]
-
-**Scene**:
-**Description**:
-**Purpose**:
-
----
-
-**Next**: `/beatboard ep{XX}`
+- 无需 frontmatter 元数据
+- 无需模板说明
+- 仅输出实际 beat breakdown 内容
+- 恰好 9 个 beats
+- 每个 beat 包含：标题、场景、描述、目的

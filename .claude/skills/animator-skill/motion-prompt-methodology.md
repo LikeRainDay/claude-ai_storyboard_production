@@ -1,6 +1,13 @@
+# 📖 动态提示词方法论（仅供参考）
+
+> **注意**: 这是参考指南。仅在复杂运动场景或有疑问时查阅。
+> 不要自动加载此文件 - 仅在需要时参考。
+
 # Motion Prompt Methodology
 
-Specialized guide for creating dynamic motion prompts optimized for AI video generation models.
+AI 视频生成模型的动态 motion prompts 创建专业指南。
+
+**说明**: 本方法论内容保持英文，因为包含专业运动术语和示例，保持英文便于理解标准视频制作术语。
 
 ## Core Philosophy
 
@@ -601,4 +608,597 @@ Before submitting a motion prompt, verify:
 
 ---
 
-This methodology ensures motion prompts are optimized for AI video generation while maintaining consistency with the storyboard production pipeline.
+## Advanced Animation Principles
+
+### The 12 Principles of Animation (Adapted for AI Video)
+
+**Note**: These principles from traditional animation can guide better motion prompts for AI video generation.
+
+#### 1. Squash and Stretch (挤压与拉伸)
+
+**Principle**: Objects deform to show impact, weight, or flexibility.
+
+**In Motion Prompts**:
+
+```
+Ball bounces, compressing on impact with ground, then stretching as it rebounds
+upward. Emphasize elastic deformation.
+```
+
+**When to use**:
+
+- Bouncing objects
+- Characters jumping or landing
+- Flexible/organic materials
+
+#### 2. Anticipation (预备动作)
+
+**Principle**: Small preparatory movement before main action makes motion feel natural.
+
+**In Motion Prompts**:
+
+```
+Character crouches down slightly, then jumps upward. Clear windup before the leap.
+```
+
+**Examples**:
+
+- Wind-up before throwing
+- Crouch before jump
+- Lean back before punch
+
+#### 3. Staging (演出布局)
+
+**Principle**: Present action clearly so viewer knows where to look.
+
+**In Motion Prompts**:
+
+```
+Character enters from left, walks to center of frame where spotlight focuses attention.
+Background elements static. Clear focal point.
+```
+
+**Key**: One clear action, unambiguous staging.
+
+#### 4. Follow Through & Overlapping Action (跟随与重叠动作)
+
+**Principle**: Different parts move at different rates; motion doesn't stop instantly.
+
+**In Motion Prompts**:
+
+```
+Character stops walking abruptly. Hair and coat continue swaying for a moment after.
+Overlapping motion, cloth settles last.
+```
+
+**Examples**:
+
+- Hair continues after head stops
+- Loose clothing trails movement
+- Pendulum swings after stopping
+
+#### 5. Ease In / Ease Out (缓入缓出)
+
+**Principle**: Motion starts slowly (ease in), accelerates, then slows (ease out). Natural acceleration curves.
+
+**In Motion Prompts**:
+
+```
+Car starts slowly, gradually accelerates, then decelerates smoothly before stopping.
+Ease-in-out motion curve. 5 seconds.
+```
+
+**Visual cue**: "Gradual acceleration and deceleration" or "smooth ease-in ease-out"
+
+#### 6. Arcs (弧形运动)
+
+**Principle**: Most natural motion follows curved paths, not straight lines.
+
+**In Motion Prompts**:
+
+```
+Character's hand swings in smooth arc from hip to overhead. Arc motion path, not linear.
+```
+
+**Examples**:
+
+- Arm/leg swings (pendulum arcs)
+- Head turns (circular path)
+- Thrown objects (parabolic arc)
+
+#### 7. Secondary Action (次要动作)
+
+**Principle**: Supporting action emphasizes main action without distracting.
+
+**In Motion Prompts**:
+
+```
+Character walks forward (primary). Simultaneously, hand adjusts hat (secondary).
+Both actions visible but walking is primary focus.
+```
+
+**Balance**: Secondary shouldn't overpower primary.
+
+#### 8. Weight (重量感)
+
+**Principle**: Motion should convey object's mass and density.
+
+**In Motion Prompts**:
+
+```
+Heavy crate slides slowly across floor, friction evident. Slow, labored movement
+conveying substantial weight. 6 seconds.
+```
+
+vs.
+
+```
+Feather drifts gently through air, floating and swaying. Light, weightless motion.
+```
+
+**Key terms**: Heavy, labored, slow / Light, quick, effortless
+
+### Additional Useful Principles
+
+#### 9. Timing (时机掌握)
+
+**Principle**: Number of frames determines speed and weight perception.
+
+**In Motion Prompts**: Specify precise duration and pace.
+
+```
+3 seconds: Quick, energetic action
+5 seconds: Moderate, deliberate action
+8 seconds: Slow, contemplative action
+```
+
+#### 10. Exaggeration (夸张)
+
+**Principle**: Push beyond reality for emphasis (use sparingly for AI video).
+
+**In Motion Prompts**:
+
+```
+Character's jaw drops comically low in shock, exaggerated surprise reaction.
+```
+
+**Caution**: Can look uncanny in realistic styles. Better for stylized content.
+
+---
+
+## Easing and Motion Curves
+
+### Understanding Easing Functions
+
+**Definition**: How motion accelerates/decelerates over time. Critical for natural movement.
+
+#### Linear (线性)
+
+**Characteristic**: Constant speed throughout.
+
+**Feel**: Robotic, mechanical, unnatural.
+
+**Use**: Mechanical objects, conveyor belts, artificial motion.
+
+**Prompt indicator**:
+
+```
+"Constant speed, linear motion"
+```
+
+#### Ease-In (渐快/加速)
+
+**Characteristic**: Starts slow, accelerates to full speed.
+
+**Feel**: Building momentum, launching.
+
+**Use**: Objects starting to move, beginning of motion.
+
+**Prompt indicator**:
+
+```
+"Starts slowly, gradually accelerates, building speed"
+```
+
+**Example**:
+
+```
+Train starts slowly, gradually accelerating as it leaves station. Ease-in curve.
+```
+
+#### Ease-Out (渐慢/减速)
+
+**Characteristic**: Full speed, decelerates to stop.
+
+**Feel**: Coming to rest, settling.
+
+**Use**: Objects stopping, end of motion.
+
+**Prompt indicator**:
+
+```
+"Moving quickly, gradually decelerates, comes to gentle stop"
+```
+
+**Example**:
+
+```
+Door swings open quickly then slows smoothly before stopping. Ease-out curve.
+```
+
+#### Ease-In-Out (慢-快-慢)
+
+**Characteristic**: Slow start, accelerate, full speed, decelerate, slow stop.
+
+**Feel**: Natural, organic, human-like.
+
+**Use**: Most natural motions (walking, arm movements, camera pans).
+
+**Prompt indicator**:
+
+```
+"Smooth acceleration and deceleration, ease-in-out curve"
+```
+
+**Example**:
+
+```
+Camera pans left to right, starting slowly, accelerating through middle, slowing
+smoothly at end. Natural ease-in-out.
+```
+
+#### Bounce (弹跳)
+
+**Characteristic**: Overshoots target, bounces back, settles.
+
+**Feel**: Elastic, playful, energetic.
+
+**Use**: Bouncing balls, elastic materials, playful UI-like motion.
+
+**Prompt indicator**:
+
+```
+"Bounces slightly past target, rebounds, settles with diminishing bounces"
+```
+
+#### Elastic (弹性)
+
+**Characteristic**: Extreme overshoot and oscillation before settling.
+
+**Feel**: Spring-like, exaggerated bounce.
+
+**Use**: Very elastic materials, stylized cartoon motion.
+
+**Prompt indicator**:
+
+```
+"Springs back and forth like elastic band before settling"
+```
+
+**Caution**: Can look unnatural in realistic styles.
+
+### Spacing (间距/节奏控制)
+
+**Definition**: Distance between positions in successive frames. Closer spacing = slower, wider spacing = faster.
+
+**In AI video prompts**, describe spacing variation:
+
+**Even spacing** (constant speed):
+
+```
+"Moves at steady, constant pace"
+```
+
+**Accelerating** (increasing spacing):
+
+```
+"Starts slow, each moment covering more distance, accelerating"
+```
+
+**Decelerating** (decreasing spacing):
+
+```
+"Moves fast initially, covering less distance each moment, slowing down"
+```
+
+---
+
+## Advanced Camera Work
+
+### Handheld vs Stabilized
+
+#### Handheld Camera
+
+**Characteristics**: Natural shake, imperfect framing, human feel.
+
+**When to use**:
+
+- Documentary style
+- Urgent/chaotic scenes
+- Intimate, personal moments
+- Gritty realism
+
+**In Motion Prompts**:
+
+```
+Handheld camera with subtle natural shake follows character through crowded street.
+Slightly imperfect framing, documentary feel.
+```
+
+**Intensity levels**:
+
+- **Minimal shake**: "Subtle handheld movement"
+- **Moderate shake**: "Noticeable handheld camera shake"
+- **Intense shake**: "Strong handheld shake, chaotic feel"
+
+#### Stabilized Camera
+
+**Characteristics**: Smooth, professional, no shake.
+
+**When to use**:
+
+- Cinematic scenes
+- Calm moments
+- Establishing shots
+- Professional quality
+
+**In Motion Prompts**:
+
+```
+Smooth dolly shot, camera glides forward on perfectly stable track. Professional,
+cinematic stability.
+```
+
+### Dynamic Camera Techniques
+
+#### Whip Pan (快速摇镜)
+
+**Definition**: Extremely fast horizontal pan creating motion blur transition.
+
+**Effect**: Energetic, dynamic, jarring.
+
+**In Motion Prompts**:
+
+```
+Camera whip pans rapidly from left to right, creating motion blur, sudden dynamic
+movement. 1 second.
+```
+
+**Use**: Transitions, following fast action, shock moments.
+
+#### Crash Zoom (冲击变焦)
+
+**Definition**: Rapid zoom in or out.
+
+**Effect**: Dramatic emphasis, sudden revelation, comedic.
+
+**In Motion Prompts**:
+
+```
+Camera rapidly zooms in on character's shocked face, crash zoom effect for dramatic
+emphasis. 0.5 seconds.
+```
+
+**Variants**:
+
+- **Zoom in**: Emphasis, revelation
+- **Zoom out**: Context reveal, surprise
+
+#### Focus Pull / Rack Focus (焦点转移)
+
+**Definition**: Shift focus from foreground to background (or vice versa) mid-shot.
+
+**Effect**: Directs viewer attention, cinematic depth.
+
+**In Motion Prompts**:
+
+```
+Camera static. Focus starts on coffee cup in foreground (sharp), background blurred.
+Focus shifts smoothly to character in background (now sharp), cup blurs out. Rack focus transition.
+```
+
+**Note**: AI video models vary in depth-of-field capability. This may work better in some models.
+
+#### Push-In (推进镜头)
+
+**Definition**: Camera moves steadily forward toward subject.
+
+**Effect**: Intensifying, drawing viewer in, building tension.
+
+**In Motion Prompts**:
+
+```
+Camera slowly pushes forward toward character's face, steady forward dolly, building
+intensity. 4 seconds.
+```
+
+**Variants**:
+
+- **Slow push-in**: Contemplative, building
+- **Fast push-in**: Urgent, intense
+
+#### Pull-Out (拉出镜头)
+
+**Definition**: Camera moves steadily backward from subject.
+
+**Effect**: Revealing context, isolation, distance.
+
+**In Motion Prompts**:
+
+```
+Camera pulls back from character, gradually revealing the vast empty warehouse around
+them. Slow dolly out, establishing isolation. 5 seconds.
+```
+
+### Tracking Shots
+
+#### Following Shot
+
+**Definition**: Camera follows moving subject at constant distance.
+
+**In Motion Prompts**:
+
+```
+Camera tracks alongside character as they walk left to right, maintaining distance.
+Smooth tracking shot. 5 seconds.
+```
+
+#### Leading Shot
+
+**Definition**: Camera moves ahead of subject.
+
+**In Motion Prompts**:
+
+```
+Camera dollies backward, facing character who walks forward toward camera. Character
+follows camera, leading shot.
+```
+
+---
+
+## Special Effects Motion
+
+### Motion Blur
+
+**Definition**: Blur created by rapid movement. Enhances sense of speed.
+
+####描述 Motion Blur 强度
+
+**Subtle blur**:
+
+```
+"Light motion blur on moving elements"
+```
+
+**Moderate blur**:
+
+```
+"Noticeable motion blur, emphasizing speed"
+```
+
+**Extreme blur**:
+
+```
+"Extreme motion blur, high-speed movement, streaking effect"
+```
+
+**Example**:
+
+```
+Car speeds past camera left to right, extreme motion blur creating streaking effect,
+emphasizing velocity. 2 seconds.
+```
+
+### Impact Frames (冲击帧)
+
+**Definition**: Brief frame emphasizing impact moment, often with distortion or white flash.
+
+**In Motion Prompts**:
+
+```
+Character's fist hits wall. Brief bright flash on impact, emphasizing collision force.
+Impact frame effect.
+```
+
+**Use**: Punches, collisions, explosions.
+
+### Smear Frames (拖影帧)
+
+**Definition**: Exaggerated motion blur for very fast movements, stretching shape.
+
+**In Motion Prompts**:
+
+```
+Character swings sword in wide arc, blade creates elongated smear trail during fast
+motion. Stylized smear effect.
+```
+
+**Use**: Fast swings, rapid movements, stylized action.
+
+**Note**: Works better in stylized/animated aesthetics than photorealism.
+
+### Hold Frames (停顿帧)
+
+**Definition**: Motion freezes for brief moment, then continues.
+
+**In Motion Prompts**:
+
+```
+Character jumps, freezes mid-air for 1 second (freeze frame), then lands. Hold frame
+for emphasis.
+```
+
+**Use**: Emphasis, dramatic pause, slow-motion effect.
+
+### Particle Effects Motion
+
+**Definition**: Small elements (dust, sparks, water droplets) enhance main motion.
+
+**In Motion Prompts**:
+
+```
+Character runs through shallow water, droplets spray up and outward with each footstep.
+Particle spray emphasizes motion.
+```
+
+**Examples**:
+
+- Dust kicked up by movement
+- Sparks flying from impact
+- Leaves swirling in wind
+- Snow disturbed by passage
+
+---
+
+## Camera Movement Expressiveness
+
+### Emotional Camera Language
+
+**Stable** = Calm, professional, objective
+
+```
+"Camera perfectly stable, objective viewpoint"
+```
+
+**Handheld** = Intimate, urgent, subjective
+
+```
+"Handheld camera following closely, personal feel"
+```
+
+**Rising** = Hope, revelation, empowerment
+
+```
+"Camera slowly rises upward, hopeful ascending movement"
+```
+
+**Falling** = Despair, defeat, collapse
+
+```
+"Camera descends downward, falling with character"
+```
+
+**Spinning** = Disorientation, chaos, loss of control
+
+```
+"Camera rotates around subject, disorienting spin"
+```
+
+**Circling** = Observation, isolation, showcasing
+
+```
+"Camera orbits around character, observing from all angles"
+```
+
+### Speed and Emotion Pairing
+
+**Very slow** (6-8 sec) = Contemplative, melancholy, dread
+**Slow** (4-5 sec) = Deliberate, careful, building
+**Medium** (2-3 sec) = Natural, conversational, neutral
+**Fast** (1-2 sec) = Energetic, dynamic, urgent
+**Very fast** (<1 sec) = Shocking, chaotic, impact
+
+---
+
+This methodology is designed as reference material. Animator should internalize these principles and apply them selectively based on the specific motion being described.
+onsistency with the storyboard production pipeline.

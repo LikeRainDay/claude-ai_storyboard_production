@@ -1,23 +1,10 @@
 {
-    "storyboard_artist_id": "a942326",
+    "storyboard_artist_id": null,
     "director_id": null,
     "animator_id": null,
     "scriptwriter_id": null,
-    "language": "zh-CN",
-    "episodes": {
-        "ep01": {
-            "script_file": "ep01-awakening.md",
-            "title": "觉醒",
-            "status": "in_progress",
-            "current_stage": "breakdown",
-            "breakdown_approved": false,
-            "beatboard_approved": false,
-            "sequence_approved": false,
-            "motion_approved": false,
-            "visual_style": "modern urban fantasy, dark tones, high contrast, cinematic lighting, blue and purple vs gold and red, 16:9"
-        }
-    },
+    "episodes": {},
     "version": "1.0.0",
     "created_at": "2026-01-10T00:00:00Z",
-    "last_updated": "2026-01-10T00:00:00Z"
+    "last_updated": "2026-01-11T00:00:00Z"
 }

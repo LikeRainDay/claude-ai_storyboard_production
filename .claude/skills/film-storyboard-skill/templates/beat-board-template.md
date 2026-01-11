@@ -1,92 +1,88 @@
-# Beat Board Template - 3x3 Grid
+# Beat Board 输出格式（参考）
+
+**此模板展示正确的 nano banner 输出结构**
+
+**❌ 严禁输出**：
+
+- Frontmatter 元数据（`---\nepisode: ep01\n---`）
+- 模板说明、注意事项
+- "下一步"或 workflow 指令
+- 任何非 prompt 内容
+
+**✅ 仅输出**：实际的 beat board 内容（见下方格式）
 
 ---
 
-episode: ep{XX}
-language: [Target language]
-visual_style: [Style keywords]
-aspect_ratio: [16:9]
-model: [AI model]
+## Nano Banner 格式（默认 - 推荐）:
 
----
+```markdown
+EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
 
-# Beat Board - Episode {XX}
+Visual Description: [详细视觉描述：镜头类型、角色/主体、动作、场景、关键视觉元素 - 80-120 词]
+Lighting & Mood: [灯光方向、质量、色温和情绪氛围 - 30-50 词]
 
-**3x3 Grid Layout**:
+Beat 2: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
 
-```
-[1][2][3]
-[4][5][6]
-[7][8][9]
-```
+Beat 3: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
 
-## Panel 1 (Top Left)
+Beat 4: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
 
-```
-[80-150 word prompt]
---ar 16:9
-```
+Beat 5: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
 
-## Panel 2 (Top Center)
+Beat 6: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
 
-```
-[Prompt]
---ar 16:9
-```
+Beat 7: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
 
-## Panel 3 (Top Right)
+Beat 8: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
 
-```
-[Prompt]
---ar 16:9
-```
-
-## Panel 4 (Middle Left)
-
-```
-[Prompt]
---ar 16:9
+Beat 9: [Beat 标题]
+Visual Description: ...
+Lighting & Mood: ...
 ```
 
-## Panel 5 (Middle Center)
+## 为什么这个格式适合 Nano Banner:
 
-```
-[Prompt]
---ar 16:9
-```
+1. **清晰结构** - 每个 beat 明确标注
+2. **关注点分离** - Visual description 独立于 lighting/mood
+3. **一致格式** - 便于 nano banner 解析
+4. **叙事流** - 读起来像视觉脚本
+5. **角色一致性** - 规范描述在所有 beats 中重复
 
-## Panel 6 (Middle Right)
+## Midjourney v6 格式:
 
-```
-[Prompt]
---ar 16:9
-```
+```markdown
+## Beat 1: [标题] (左上)
 
-## Panel 7 (Bottom Left)
+[详细提示词] --ar 16:9 --style cinematic --v 6
 
-```
-[Prompt]
---ar 16:9
-```
+## Beat 2: [标题] (中上)
 
-## Panel 8 (Bottom Center)
-
-```
-[Prompt]
---ar 16:9
+...
 ```
 
-## Panel 9 (Bottom Right)
+## Gemini/DALL-E 格式:
 
-```
-[Prompt]
---ar 16:9
-```
+各个 beat 提示词，无特殊格式要求。
 
----
+## Agent 注意事项：
 
-**Character Consistency**: Identical descriptions across all 9 panels
-
-**Grid Assembly**: Generate individually, then assemble into 3x3 grid
-
-**Next**: `/sequence ep{XX}`
+- **无需 frontmatter 元数据**
+- **无需模板说明**
+- **使用一致的角色规范描述**
+- **Visual Description 应详细** (80-120 词)
+- **Lighting & Mood 应具体** (30-50 词)
+- **叙事英文提示词**（AI 兼容性）

@@ -1,4 +1,13 @@
-# Storyboard Methodology Playbook
+# 📖 影视分镜方法论手册（仅供参考）
+
+> **注意**: 这是参考指南。仅在遇到方法论问题时查阅。
+> 不要自动加载此文件 - 仅在困惑或需要时参考。
+
+# Film Storyboard Methodology Playbook
+
+专业的影视和动画分镜方法论，优化用于 AI 图像生成工作流。
+
+**说明**: 本手册内容保持英文，因为包含大量专业术语和示例，保持英文便于理解标准摄影和分镜术语。
 
 This playbook defines the professional methodology for creating film and animation storyboards optimized for AI image generation workflows.
 
@@ -430,6 +439,337 @@ Prompt 2: [description]. Anime style, soft shading, vibrant colors, cinematic co
 ...
 Prompt 9: [description]. Anime style, soft shading, vibrant colors, cinematic composition.
 ```
+
+---
+
+## Advanced Film Techniques
+
+### Montage (蒙太奇)
+
+**Definition**: A sequence of short shots edited together to condense time, convey ideas, or create emotional impact.
+
+#### When to Use Montage
+
+- **Compress time**: Show a lengthy process (training, journey, construction) in seconds
+- **Thematic connection**: Link disparate elements to convey a concept or theme
+- **Parallel action**: Show multiple events happening simultaneously
+- **Build rhythm**: Create emotional momentum through editing pace
+
+#### Montage Types
+
+**Narrative Montage** (叙事蒙太奇):
+
+Compress time by showing key moments of a process.
+
+**Structure for 9-panel beat board**:
+
+- Beat 4: Process begins
+- Beat 5: [MONTAGE IMPLIED] - Single representative image from montage
+  - Visual Description should note: "Montage sequence - multiple training moments"
+- Beat 6: Process complete, character transformed
+
+**Example**:
+
+```
+Beat 4: Training Begins
+Visual Description: Wide shot. The protagonist in workout clothes stands in
+an empty gym, looking at a punching bag with determination. Early morning
+light through windows. Cinematic composition.
+
+Beat 5: Training Montage
+Visual Description: Medium shot. The protagonist mid-punch, sweat flying,
+intense focus. This image represents a montage of training moments - running,
+lifting, sparring. Gritty, high-contrast lighting showing effort and struggle.
+[NOTE: In actual production, this becomes 5-10 quick shots]
+
+Beat 6: Mastery Achieved
+Visual Description: Medium shot from low angle. The protagonist, now muscular
+and confident, wraps hands in tape before a championship fight. Professional
+gym setting. Powerful, heroic lighting.
+```
+
+**Thematic Montage** (主题蒙太奇):
+
+Juxtapose contrasting or related images to convey a theme.
+
+**Example Theme: Inequality**
+
+- Shot 1: Lavish banquet, rich guests in formal wear
+- Shot 2: Homeless person digging through trash
+- Shot 3: Luxury car driving past
+- Shot 4: Child begging on street corner
+- Alternating creates thematic contrast
+
+**In beat board**: Choose one representative moment from each "side" of the theme.
+
+**Parallel Montage** (平行蒙太奇):
+
+Cross-cut between two or more simultaneous actions to build tension.
+
+**Structure**:
+
+- Beat 6: Character A discovers danger
+- Beat 7: [PARALLEL] Character B unaware, walking into trap
+- Beat 8: Both storylines converge
+
+**Visual cue**: Note in prompt: "Parallel action - Character B simultaneously..."
+
+#### Montage Pacing
+
+**Fast cuts** (1-2 seconds each):
+
+- High energy, urgency
+- Action sequences
+- Frenetic emotion
+
+**Medium cuts** (2-4 seconds each):
+
+- Progress over time
+- Training sequences
+- Building momentum
+
+**Slow cuts** (4-6 seconds each):
+
+- Melancholy, reflection
+- Loss or grief
+- Contemplative moments
+
+### Transitions Between Scenes (场景转场)
+
+**Definition**: How one scene connects to the next. Choice of transition affects pacing and meaning.
+
+#### Cut (直切)
+
+**Most common**: Direct cut from one shot to the next.
+
+**When to use**:
+
+- Continuous time/space
+- Maintain forward momentum
+- Standard narrative flow
+
+**In sequence board**:
+
+```
+Panel 3: Character closes laptop, stands up
+Panel 4: [CUT] Character walks down street
+```
+
+#### Match Cut (匹配剪辑)
+
+**Definition**: Transition using visual or thematic similarity.
+
+**Types**:
+
+**Graphic Match** - Similar shapes:
+
+```
+Panel 3: Close-up of character's eye, wide with fear
+Panel 4: [MATCH CUT] Full moon in night sky, same circular composition
+```
+
+**Action Match** - Continues motion:
+
+```
+Panel 3: Character's hand reaches for door handle
+Panel 4: [MATCH CUT] Hand pulls open car door (different location, continuous motion)
+```
+
+**Conceptual Match** - Thematic link:
+
+```
+Panel 3: Child's toy spinning on floor
+Panel 4: [MATCH CUT] Roulette wheel in casino (years later)
+```
+
+**How to note in prompts**: Add descriptor like "Match cut - circular composition continues"
+
+#### Dissolve / Cross-fade (叠化)
+
+**Definition**: One image gradually fades into another, briefly overlapping.
+
+**When to use**:
+
+- Time passage
+- Dream sequences
+- Memories/flashbacks
+- Gentle, contemplative transitions
+
+**Visual indicator in prompt**:
+"Soft edges, slightly dreamy quality - dissolve transition to next beat"
+
+**In sequence board**:
+
+```
+Panel 3: Character closes eyes in hospital bed, exhausted
+Panel 4: [DISSOLVE] Character wakes in same position, but room now sunny
+         (days later). Lighting shift indicates time passage.
+```
+
+#### Fade to Black (淡至黑)
+
+**Definition**: Image fades to complete black screen.
+
+**When to use**:
+
+- Chapter/act breaks
+- Dramatic endings
+- Major time jumps
+- Death or loss
+
+**In beat board**: Note after beat - "Fade to black before next beat"
+
+#### Smash Cut (冲击切)
+
+**Definition**: Abrupt, jarring transition for shock effect.
+
+**When to use**:
+
+- Sudden revelations
+- Startling interruptions
+- Contrast quiet moment with loud/shocking scene
+
+**Example**:
+
+```
+Panel 3: Character sleeps peacefully, serene quiet bedroom
+Panel 4: [SMASH CUT] Explosion fills frame, chaos, fire
+```
+
+#### Wipe (划变)
+
+**Definition**: One image "pushes" another off screen (less common, stylistic).
+
+**When to use**:
+
+- Stylized sequences (Star Wars style)
+- Playful tone
+- Retro/homage aesthetics
+
+**Note**: Rarely needed for AI storyboarding, mentioned for completeness.
+
+### Time and Space Manipulation (时空处理)
+
+#### Flashback (闪回)
+
+**Definition**: Interrupts present timeline to show past events.
+
+**Visual Indicators**:
+
+- Desaturated colors or sepia tone
+- Soft vignette edges
+- Slightly blurred or dreamy quality
+- Different aspect ratio (optional)
+
+**Structure in 9-panel beat board**:
+
+```
+Beat 4: Present - Character sees old photograph
+Visual Description: ...triggers memory...
+
+Beat 5: [FLASHBACK] Past - The moment in the photograph
+Visual Description: Same scene but 20 years earlier. Desaturated colors,
+soft vignette edges, nostalgic atmosphere. [Flashback sequence]
+Lighting & Mood: Warm, faded colors like an old photograph. Dreamy,
+nostalgic mood.
+
+Beat 6: Return to Present - Character sets photo down
+Visual Description: Back to full color saturation...
+```
+
+**Transition cues**:
+
+- INTO flashback: Dissolve with desaturation
+- OUT of flashback: Dissolve back to full color
+
+#### Flash-forward (闪前)
+
+**Definition**: Jump forward to show future events.
+
+**Visual Indicators**:
+
+- Oversaturated or stark lighting
+- Sharp, cold color temperature
+- High contrast
+- Optional: Different visual style (grittier, more digital)
+
+**Use sparingly**: Can confuse narrative if overused.
+
+#### Dream Sequence (梦境序列)
+
+**Visual Indicators**:
+
+- Surreal elements (defying physics)
+- Soft focus or ethereal glow
+- Unstable framing (Dutch angles)
+- Unexpected color shifts
+- Logic violations (A transforms into B)
+
+**Example**:
+
+```
+Beat 6: [DREAM] Character walks through impossible architecture
+Visual Description: Wide shot, Dutch angle. Character walks up stairs that
+transform into waterfalls mid-step. Walls shift and breathe. Soft glowing
+edges around everything. Physics-defying, Escher-like architecture.
+Lighting & Mood: Diffuse, directionless glow. Ethereal and unsettling.
+Blue-purple otherworldly color palette. Dream logic.
+```
+
+**Transition in/out**: Usually fade to black or dissolve.
+
+#### Slow Motion (慢动作)
+
+**When to use**:
+
+- Emotional peaks (tears falling, embrace)
+- Emphasize critical action (bullet dodged, glass shattering)
+- Beauty/grace (athlete's perfect form)
+- Dramatic impact (explosion, fall)
+
+**In motion prompts**:
+
+```
+Glass shatters in extreme slow motion, fragments suspended in air catching
+light. 6 seconds.
+```
+
+**In static beat board**: Implies weight and importance.
+
+```
+Visual Description: ...water droplets frozen mid-splash, crystalline and
+detailed. [Slow motion aesthetic]
+```
+
+#### Fast Motion / Time Lapse (快动作/延时)
+
+**When to use**:
+
+- Show long time passage quickly (sun crossing sky, city bustling)
+- Comedic effect
+- Convey frantic energy
+
+**Example**:
+
+```
+Beat 3: Time Lapse - City Awakening
+Visual Description: Wide shot of city skyline. Blurred motion of clouds
+racing overhead, traffic streaks of light, sun arcing across sky.
+[Time lapse effect]. Represents dawn to dusk in seconds.
+```
+
+#### Freeze Frame (定格)
+
+**Definition**: Motion stops, becomes still image.
+
+**When to use**:
+
+- Emphasize moment of realization
+- Ending on character's expression
+- Pause for dramatic effect
+
+**In motion prompt**: "Motion continues until character's expression shifts
+to shock, then freeze frame. 4 seconds total, last 2 seconds frozen."
 
 ---
 

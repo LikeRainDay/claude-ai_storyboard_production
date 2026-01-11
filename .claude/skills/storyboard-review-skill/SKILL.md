@@ -1,66 +1,66 @@
 ---
 name: Storyboard Review Skill
-description: Comprehensive quality assurance checklist for reviewing storyboard outputs at all production stages
+description: 所有制作阶段的故事板输出全面质量保证检查清单
 version: 1.0.0
 ---
 
-# Storyboard Review Skill
+# Storyboard Review Skill (故事板审查技能)
 
-This skill package equips the Director with systematic review criteria for all storyboard production stages.
+此技能为 Director 提供所有故事板制作阶段的系统化审查标准。
 
-## Skill Components
+## 技能组件
 
 ### 1. **review-checklist.md**
 
-Stage-specific quality criteria:
+各阶段质量标准：
 
-- Beat Breakdown review checklist
-- Beat Board (9-panel) review checklist
-- Sequence Board (4-panel) review checklist
-- Motion Prompt review checklist
+- Beat Breakdown 审查检查清单
+- Beat Board (9 格)审查检查清单
+- Sequence Board (4 格)审查检查清单
+- Motion Prompt 审查检查清单
 
-## Purpose
+## 用途
 
-The Director uses this skill to:
+Director 使用此技能来：
 
-- Systematically evaluate Storyboard Artist and Animator outputs
-- Ensure methodology compliance
-- Identify specific issues requiring revision
-- Provide actionable feedback
+- 系统性评估 Storyboard Artist 和 Animator 的输出
+- 确保方法论合规性
+- 识别需要修订的具体问题
+- 提供可操作的反馈
 
-## When to Use This Skill
+## 何时使用此技能
 
-The Director should reference this skill when:
+Director 应在以下情况参考此技能：
 
-- Reviewing any artifact output (all 4 stages)
-- Determining PASS/FAIL verdict
-- Providing revision feedback
-- Explaining quality violations
+- 审查任何 artifact 输出（所有 4 个阶段）
+- 确定 PASS/FAIL 裁决
+- 提供修订反馈
+- 解释质量违规
 
-## Review Philosophy
+## 审查理念
 
-**Be Fair, But Strict**:
+**公平，但严格**：
 
-- A PASS means the work is production-ready for AI generation
-- Flawed prompts waste generation budget and time
-- Better to request revisions now than to generate poor results
+- PASS 意味着作品已准备好用于 AI 生成
+- 有缺陷的提示词浪费生成预算和时间
+- 现在要求修订总比生成糟糕的结果好
 
-**Be Specific**:
+**具体明确**：
 
-- Reference exact line numbers, prompts, or beats
-- Explain WHY something is a problem
-- Tell the creator exactly what to fix
+- 引用确切的行号、提示词或 beats
+- 解释为什么某处有问题
+- 准确告诉创作者需要修复什么
 
-**Be Educational**:
+**教育性**：
 
-- Help creators understand the methodology
-- Acknowledge what works well
-- Build familiarity with quality standards
+- 帮助创作者理解方法论
+- 认可做得好的地方
+- 建立对质量标准的熟悉度
 
-## Skill Activation
+## 技能激活
 
-This skill is **always active** for the Director agent. All reviews must follow the checklists defined here.
+此技能对 Director agent **始终激活**。所有审查必须遵循此处定义的检查清单。
 
 ---
 
-**Usage**: The Director agent automatically references this skill. No manual invocation required.
+**用法**: Director agent 自动引用此技能。无需手动调用。
