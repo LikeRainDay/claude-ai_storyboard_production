@@ -1,7 +1,9 @@
 ---
 name: Storyboard Review Skill
-description: 所有制作阶段的故事板输出全面质量保证检查清单
+description: Use when reviewing storyboard outputs at any production stage (beat breakdown, beat board, sequence board, motion prompts), providing quality assurance feedback, or identifying revision requirements for Director agent
 version: 1.0.0
+allowed-tools: Read
+user-invocable: false
 ---
 
 # Storyboard Review Skill (故事板审查技能)

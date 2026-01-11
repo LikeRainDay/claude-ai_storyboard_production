@@ -367,42 +367,57 @@ Director 自动审查每个阶段，提供 PASS/FAIL 判决：
 
 **Skills**: `animator-skill`
 
-## Skill 架构
+## Skill 架构 (2.0 标准化)
+
+所有 Skills 已按照 [Claude Code 官方标准](https://code.claude.com/docs/en/skills) 重构，采用**渐进式披露**模式。
 
 ### film-storyboard-skill
 
-**包含**：
+**核心文件**:
 
-- `storyboard-methodology-playbook.md` 📖 - 完整方法论（809 行）
-  - 四大支柱、Beat 方法论、镜头构图
-  - 高级电影技巧（蒙太奇、转场、时空处理）
-- `gemini-image-prompt-guide.md` 📖 - Nano Banner 提示词指南
-- `templates/` - Beat breakdown, Beat board, Sequence board 模板
-
-### storyboard-review-skill
-
-**包含**：
-
-- `review-checklist.md` - 详细审查标准（330 行）
-  - 每个阶段的检查清单
-  - 常见失败模式
-  - 判决矩阵
-
-### animator-skill
-
-**包含**：
-
-- `motion-prompt-methodology.md` 📖 - Motion prompt 方法论（611 行）
-  - 5 大支柱、运动类型库、速度指导
-- `templates/motion-prompt-template.md` - Motion prompt 模板
+- `SKILL.md` (139 行) - 概述、核心原则、快速开始、导航
+- `REFERENCE.md` 📖 - 平台特性和风格库（渐进式披露）
+  - Nano Banner vs Midjourney vs Gemini 格式对比
+  - 7 种视觉风格库（写实、动漫、概念艺术等）
+  - 6 种光影方案候选
+  - 宽高比选项
+- `storyboard-methodology-playbook.md` 📖 - 完整方法论
+- `gemini-image-prompt-guide.md` 📖 - 提示词写法指南
+- `templates/` - 输出模板
 
 ### scriptwriter-skill
 
-**包含**：
+**核心文件**:
 
+- `SKILL.md` (175 行) - 概述、核心原则、快速开始、导航
+- `GUIDELINES.md` 📖 - 详细写作规范（渐进式披露）
+  - 场景格式规范
+  - 角色首次出场规则
+  - Beats 分布指导
+  - 对话写作技巧
 - `screenplay-methodology.md` 📖 - 剧本创作方法论
-  - 三幕结构、角色发展、系列连续性
-- `templates/episode-template.md` - Episode 剧本模板
+- `templates/` - 输出模板
+
+### animator-skill
+
+**核心文件**:
+
+- `SKILL.md` (225 行) - 概述、核心原则、快速开始、导航
+- `MOTION_LIBRARY.md` 📖 - 完整运动库（渐进式披露）
+  - 主体运动库（人物移动、动作、表情）
+  - 镜头运动库（Pan、Dolly、Crane、Orbit）
+  - 自然运动（风、水、光影）
+  - 运动速度指导
+  - 平台特性和优化
+- `motion-prompt-methodology.md` 📖 - Motion prompt 方法论
+- `templates/` - 输出模板
+
+### storyboard-review-skill
+
+**核心文件**:
+
+- `SKILL.md` (68 行) - 审查理念和检查清单引用
+- `review-checklist.md` - 详细审查标准
 
 ## 技术细节
 
@@ -558,6 +573,9 @@ contemplative mood. 5 seconds.
 
 ---
 
-**系统版本**: 1.0
+**系统版本**: 2.0 (Skills 标准化)
 **最后更新**: 2026-01-11
-**Agents**: 4 | **Skills**: 4 | **方法论行数**: 2,500+
+**Agents**: 4 个专业 sub-agents
+**Skills**: 4 个标准化技能包（渐进式披露模式）
+**Skills 总行数**: 607 行（优化 -39.4%）
+**符合标准**: 100% [Claude Code 官方标准](https://code.claude.com/docs/en/skills)

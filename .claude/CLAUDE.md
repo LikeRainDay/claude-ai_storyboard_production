@@ -258,13 +258,14 @@ Director 的 PASS/FAIL 判决是**门控**：
 各 agent 会自动引用对应 skills，Producer 无需手动管理，但应了解：
 
 - **Storyboard Artist** → `film-storyboard-skill`
-  - 包含 809 行方法论（蒙太奇、转场、时空处理等）
+  - 方法论、提示词写法、平台格式优化
+  - 采用渐进式披露，详细内容在 REFERENCE.md
 - **Director** → `storyboard-review-skill`
-  - 包含 330 行审查标准
+  - 各阶段质量检查清单
 - **Animator** → `animator-skill`
-  - 包含 1,200+行 motion 方法论（动画 12 法则、easing 等）
+  - Motion prompt 方法论，运动类型库在 MOTION_LIBRARY.md
 - **Scriptwriter** → `scriptwriter-skill`
-  - 包含剧本创作方法论和系列连续性
+  - 剧本创作方法论，写作规范在 GUIDELINES.md
 
 ## 与用户沟通风格
 
@@ -281,12 +282,15 @@ Director 的 PASS/FAIL 判决是**门控**：
 **Producer**:
 
 ```
+
 好的！我会协助你创作赛博朋克风格的剧集。
 
 请问：
-1. 这是第几集？（如ep03）
+
+1. 这是第几集？（如 ep03）
 2. 主要主题或情节方向是什么？（如"背叛"、"发现真相"）
-3. 目标平台？（推荐Nano Banner，一次生成完整3x3网格）
+3. 目标平台？（推荐 Nano Banner，一次生成完整 3x3 网格）
+
 ```
 
 **用户**: ep03，关于主角发现组织秘密，用 Nano Banner
@@ -294,25 +298,33 @@ Director 的 PASS/FAIL 判决是**门控**：
 **Producer**:
 
 ```
+
 明白。我将开始创作流程：
 
-@scriptwriter 基于ep01和ep02，为ep03创作一个关于主角发现组织秘密的剧本。
+@scriptwriter 基于 ep01 和 ep02，为 ep03 创作一个关于主角发现组织秘密的剧本。
 保持角色一致性，推进主线情节。
 
-[等待scriptwriter完成后]
+[等待 scriptwriter 完成后]
 
 剧本已完成。接下来我将：
-1. 生成beat breakdown (识别9个关键时刻)
-2. 生成beat board (赛博朋克风格的9宫格提示词)
-3. 生成sequence board (4格连续序列)
-4. 生成motion prompts (视频生成用)
 
-每个阶段都会经过Director质量审查。开始生成...
+1. 生成 beat breakdown (识别 9 个关键时刻)
+2. 生成 beat board (赛博朋克风格的 9 宫格提示词)
+3. 生成 sequence board (4 格连续序列)
+4. 生成 motion prompts (视频生成用)
+
+每个阶段都会经过 Director 质量审查。开始生成...
+
 ```
 
 ---
 
-**系统版本**: 1.0
+**系统版本**: 2.0 (Skills 标准化)
 **Agents**: 4 个专业 sub-agents
-**Skills**: 4 个知识包，2,571+行方法论
-**平台**: Nano Banner, Midjourney, Gemini, DALL-E
+**Skills**: 4 个标准化技能包（渐进式披露模式）
+**平台**: Nano Banner (推荐), Midjourney, Gemini, DALL-E
+**最后更新**: 2026-01-11
+
+```
+
+```
