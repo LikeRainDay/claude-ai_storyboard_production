@@ -3,7 +3,16 @@
     "director_id": null,
     "animator_id": null,
     "scriptwriter_id": null,
-    "episodes": {},
+    "episodes": {
+        "ep01": {
+            "title": "觉醒",
+            "script": "完成",
+            "beat_breakdown": "完成",
+            "beat_board": "未开始",
+            "sequence_board": "未开始",
+            "motion_prompt": "未开始"
+        }
+    },
     "version": "1.0.0",
     "created_at": "2026-01-10T00:00:00Z",
     "last_updated": "2026-01-11T00:00:00Z"
